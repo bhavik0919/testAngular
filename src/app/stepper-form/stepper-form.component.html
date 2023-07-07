@@ -1,0 +1,59 @@
+<div class="form">
+  <!-- Section Title -->
+  <h1 class="form-title" [attr.aria-label]="currentSection.title" tabindex="0">{{ currentSection.title }}</h1>
+  
+  <!-- Section Description -->
+  <p class="section-title m-0" [attr.aria-label]="currentSection.description" tabindex="0">{{ currentSection.description }}</p>
+  
+  <!-- Button Row -->
+  <div class="button-row">
+    <!-- Delete Button -->
+    <button mat-raised-button class="btn-main" (click)="formService.deleteAnswer()" aria-label="Delete" tabindex="0">Delete</button>
+    
+    <!-- Save Draft Button -->
+    <button mat-raised-button class="btn-main" (click)="formService.saveDraft()" aria-label="Save Draft" tabindex="0">Save Draft</button>
+    
+    <!-- Submit Button -->
+    <button mat-raised-button class="btn-main" [disabled]="!formService.form.touched"
+      [class.disabled]="!formService.form.touched" (click)="formService.submitForm()" aria-label="Submit" tabindex="0">
+      Submit
+    </button>
+  </div>
+  
+  <!-- Questions Form -->
+  <form [formGroup]="formService.currentQuestionFormGroup" class="questions-form">
+    <!-- Question Title -->
+    <p class="questions m-0" tabindex="0">{{ currentSection.questions[questionIndex].title }}</p>
+    
+    <!-- List of Options -->
+    <span class="list-section">
+      <ul formGroupName="options">
+        <!-- Option Group -->
+        <li *ngFor="let optionGroup of formService.optionsFormArray; let optionIndex = index" [formGroupName]="optionIndex">
+          <!-- Checkbox for Option -->
+          <mat-checkbox [attr.aria-label]="'Option ' + (optionIndex + 1)" [formControlName]="'selected'"
+            tabindex="0" (keydown)="handleCheckboxKeyDown($event)">
+            {{ optionGroup.value.value }}
+          </mat-checkbox>
+        </li>
+      </ul>
+    </span>
+    
+    <!-- Button Row -->
+    <div class="button-row">
+      <!-- Previous Question Button -->
+      <button mat-raised-button [disabled]="questionService.questionIndex === 0"
+        [class.disabled]="questionService.questionIndex === 0" class="btn-secondary" (click)="questionService.previousQuestion()"
+        aria-label="Previous Question" tabindex="0">
+        Back
+      </button>
+      
+      <!-- Next Question Button -->
+      <button mat-raised-button [disabled]="questionService.questionIndex === questionService.questions.length - 1"
+        [class.disabled]="questionService.questionIndex === questionService.questions.length - 1" class="btn-secondary" (click)="questionService.nextQuestion()"
+        aria-label="Next Question" tabindex="0">
+        Next
+      </button>
+    </div>
+  </form>
+</div>

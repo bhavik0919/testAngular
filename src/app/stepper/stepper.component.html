@@ -1,0 +1,39 @@
+<section>
+  <!-- Navigation -->
+  <nav>
+    <div class="vertical-stepper">
+      <!-- Step List -->
+      <ul class="step-ul">
+        <!-- Iterate over sections -->
+        <li *ngFor="let step of sections; let i = index"
+          class="step-li"
+          [class.active]="sectionIndex === i"  
+          [class.completed]="step.completed"
+        >
+          <!-- Step Line -->
+          <div class="line" *ngIf="i !== sections.length - 1"></div>  <!-- Display line for each step except the last one -->
+          
+          <!-- Step Button -->
+          <button mat-button [disabled]="sectionIndex === i" (click)="onChangeStep(i)" tabindex="0">
+            {{ step.id }}
+          </button>
+          
+          <!-- Step Title -->
+          <p>{{ step.title }}</p>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Right Container -->
+  <div class="right-container">
+    <!-- Form Title -->
+    <h1 class="title">{{ formName }}</h1>
+    
+    <!-- Form ID -->
+    <p class="sub-title m-0">ID: {{ formId }}</p>
+    
+    <!-- Stepper Form Component -->
+    <app-stepper-form></app-stepper-form>
+  </div>
+</section>

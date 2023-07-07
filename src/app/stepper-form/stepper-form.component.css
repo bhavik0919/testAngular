@@ -1,0 +1,91 @@
+
+.form {
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    margin-top: 20px;
+    width: 70%;
+    background: white;
+}
+
+.questions-form {
+    position: relative;
+    margin-top: 20px;
+    background: white;
+    width: 100%;
+    height: 100%;
+    top: 20px;
+}
+
+.form-title {
+    left: 20px;
+    color: #141414;
+    text-align: left;
+    font: 400 32px Inter;
+    position: relative;
+}
+
+.section-title {
+    color: #7d7d7d;
+    text-align: left;
+    font: 400 16px Inter;
+    position: relative;
+    left: 20px;
+}
+
+.btn-secondary.mdc-button.mdc-button--raised {
+    background: white;
+    height: 25px;
+    position: relative;
+    color: #d04a02;
+    border-style: solid;
+    border-color: #d04a02;
+    border-width: 2px;
+}
+
+.btn-secondary.mdc-button.mdc-button--raised.disabled {
+    color: #dedede;
+    border-style: solid;
+    border-color: #f2f2f2;
+    border-width: 2px;
+}
+
+
+.btn-main.mdc-button.mdc-button--raised {
+    background: #d04a02;
+    height: 25px;
+    color: white;
+    position: relative;
+}
+
+.btn-main.mdc-button.mdc-button--raised.disabled {
+    background: #f2f2f2;
+    height: 25px;
+    color: #dedede;
+    position: relative;
+}
+
+.button-row {
+    position: relative;
+    left: 20px;
+    top: 13px;
+}
+
+.button-row .mdc-button {
+    margin: 8px 8px 8px 0;
+}
+
+.questions {
+    text-align: left;
+    font: 400 16px Inter;
+    position: relative;
+    left: 20px;
+    color: #141414;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}

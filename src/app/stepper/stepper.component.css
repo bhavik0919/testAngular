@@ -1,0 +1,147 @@
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 20%;
+    padding: 50px;
+}
+
+.right-container {
+    float: right;
+    width: 74%;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.title {
+    border-bottom: 2px solid red;
+    width: 200px;
+    top: 20px;
+    bottom: 8px;
+    position: relative;
+    color: #141414;
+    text-align: left;
+    font: 400 36px Inter;
+}
+
+.sub-title {
+    color: #7d7d7d;
+    text-align: left;
+    font: 400 16px Inter;
+    position: relative;
+}
+
+.m-0 {
+    margin: 0px
+}
+
+/* new design  */
+.vertical-stepper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.step-ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 50px;
+}
+
+.step-li {
+    position: relative;
+    margin-bottom: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-li button.mdc-button.mat-mdc-button {
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    min-width: auto;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7d7d7d;
+    font: 700 16px Inter;
+}
+
+.step-li.active button.mdc-button.mat-mdc-button {
+    background-color: #d04a02;
+    color: #fff;
+    width: 45px;
+    min-width: auto;
+    height: 45px;
+    font: 700 16px Inter;
+    z-index: 1;
+    /* Add this line to bring the active circle to the front */
+}
+
+.step-li:not(.active) button.mdc-button.mat-mdc-button {
+    background-color: #dedede;
+}
+
+.line {
+    position: absolute;
+    top: calc(50% + 15px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 80px;
+    background-color: #dedede;
+    /* Change the line color to gray */
+    z-index: 0;
+    /* Set a lower z-index for the line to ensure it appears behind the circles */
+}
+
+.step-li.active p {
+    left: 60px;
+    width: 200px;
+    position: absolute;
+    color: #141414;
+    text-align: left;
+    font: 400 24px Inter;
+}
+
+.step-li p {
+    left: 60px;
+    width: 200px;
+    color: #7d7d7d;
+    text-align: left;
+    font: 400 16px Inter;
+    position: absolute;
+}
+
+.step-content {
+    margin-left: 20px;
+    color: #7d7d7d;
+    text-align: left;
+    font: 400 16px Inter;
+    position: relative;
+}
+
+.step-content p {
+    margin-top: 0;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.step-content {
+    animation: slideIn 0.5s;
+}

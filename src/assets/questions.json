@@ -1,0 +1,256 @@
+{
+  "formName": "Acceptance",
+  "formId": 1001,
+  "sections": [
+    {
+      "id": 1,
+      "title": "Team Information",
+      "description": "Questions relating to team information",
+      "completed": false,
+      "questions": [
+        {
+          "id": 1,
+          "title": "How many team members do you have?",
+          "options": [
+            { "id": 1, "value": "1-10" },
+            { "id": 2, "value": "11-20" },
+            { "id": 3, "value": "21-30" },
+            { "id": 4, "value": "31+" }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Which department do you belong to?",
+          "options": [
+            { "id": 1, "value": "Sales" },
+            { "id": 2, "value": "Marketing" },
+            { "id": 3, "value": "Finance" },
+            { "id": 4, "value": "Operations" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Entities",
+      "description": "Questions relating to entities",
+      "completed": false,
+      "questions": [
+        {
+          "id": 1,
+          "title": "Which type of entity are you referring to?",
+          "options": [
+            { "id": 1, "value": "Company" },
+            { "id": 2, "value": "Organization" },
+            { "id": 3, "value": "Government Agency" },
+            { "id": 4, "value": "Non-profit" }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Which industry does the entity belong to?",
+          "options": [
+            { "id": 1, "value": "Technology" },
+            { "id": 2, "value": "Finance" },
+            { "id": 3, "value": "Healthcare" },
+            { "id": 4, "value": "Education" }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "What is the size of the entity?",
+          "options": [
+            { "id": 1, "value": "Small (1-50 employees)" },
+            { "id": 2, "value": "Medium (51-500 employees)" },
+            { "id": 3, "value": "Large (501+ employees)" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Investments",
+      "description": "Questions relating to investment portfolio",
+      "completed": false,
+      "questions": [
+        {
+          "id": 1,
+          "title": "What is your investment goal?",
+          "options": [
+            { "id": 1, "value": "Capital growth" },
+            { "id": 2, "value": "Income generation" },
+            { "id": 3, "value": "Risk mitigation" },
+            { "id": 4, "value": "Diversification" }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "What is your risk tolerance?",
+          "options": [
+            { "id": 1, "value": "Conservative" },
+            { "id": 2, "value": "Moderate" },
+            { "id": 3, "value": "Aggressive" }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Which investment vehicles are you interested in?",
+          "options": [
+            { "id": 1, "value": "Stocks" },
+            { "id": 2, "value": "Bonds" },
+            { "id": 3, "value": "Mutual Funds" },
+            { "id": 4, "value": "Real Estate" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "L2 Entities",
+      "description": "Questions relating to L2 entities",
+      "completed": false,
+      "questions": [
+        {
+          "id": 1,
+          "title": "Which L2 entity type are you referring to?",
+          "options": [
+            { "id": 1, "value": "Subsidiary" },
+            { "id": 2, "value": "Division" },
+            { "id": 3, "value": "Branch" },
+            { "id": 4, "value": "Franchise" }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "How are L2 entities managed?",
+          "options": [
+            { "id": 1, "value": "Centralized" },
+            { "id": 2, "value": "Decentralized" },
+            { "id": 3, "value": "Hybrid" }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Which factors determine the formation of L2 entities?",
+          "options": [
+            { "id": 1, "value": "Geographical location" },
+            { "id": 2, "value": "Market demand" },
+            { "id": 3, "value": "Legal requirements" },
+            { "id": 4, "value": "Strategic goals" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Master Funds",
+      "description": "Questions relating to master funds",
+      "completed": false,
+      "questions": [
+        {
+          "id": 1,
+          "title": "What is the investment strategy of the master fund?",
+          "options": [
+            { "id": 1, "value": "Equity-focused" },
+            { "id": 2, "value": "Fixed-income-focused" },
+            { "id": 3, "value": "Balanced portfolio" },
+            { "id": 4, "value": "Alternative investments" }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Which geographic regions does the master fund primarily invest in?",
+          "options": [
+            { "id": 1, "value": "North America" },
+            { "id": 2, "value": "Europe" },
+            { "id": 3, "value": "Asia-Pacific" },
+            { "id": 4, "value": "Global" }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "What is the minimum investment requirement for the master fund?",
+          "options": [
+            { "id": 1, "value": "$10,000" },
+            { "id": 2, "value": "$50,000" },
+            { "id": 3, "value": "$100,000" },
+            { "id": 4, "value": "$500,000" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Risk",
+      "description": "Questions relating to risk",
+      "completed": false,
+      "questions": [
+        {
+          "id": 1,
+          "title": "How do you assess risk in your investments?",
+          "options": [
+            { "id": 1, "value": "Quantitative analysis" },
+            { "id": 2, "value": "Qualitative analysis" },
+            { "id": 3, "value": "Combination of quantitative and qualitative analysis" }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "What is your risk tolerance level?",
+          "options": [
+            { "id": 1, "value": "Conservative" },
+            { "id": 2, "value": "Moderate" },
+            { "id": 3, "value": "Aggressive" }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "How do you mitigate risk in your investment portfolio?",
+          "options": [
+            { "id": 1, "value": "Diversification" },
+            { "id": 2, "value": "Hedging strategies" },
+            { "id": 3, "value": "Risk monitoring and management" },
+            { "id": 4, "value": "Insurance coverage" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Billing",
+      "description": "Questions relating to billing",
+      "completed": false,
+      "questions": [
+        {
+          "id": 1,
+          "title": "Which billing method do you prefer?",
+          "options": [
+            { "id": 1, "value": "Hourly billing" },
+            { "id": 2, "value": "Fixed fee" },
+            { "id": 3, "value": "Retainer" },
+            { "id": 4, "value": "Subscription-based" }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "How do you handle invoicing and payment processing?",
+          "options": [
+            { "id": 1, "value": "In-house system" },
+            { "id": 2, "value": "Third-party billing software" },
+            { "id": 3, "value": "Outsourced to a billing service" }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "What payment methods do you accept?",
+          "options": [
+            { "id": 1, "value": "Credit card" },
+            { "id": 2, "value": "Bank transfer" },
+            { "id": 3, "value": "PayPal" },
+            { "id": 4, "value": "Other digital payment methods" }
+          ]
+        }
+      ]
+    }
+  ]
+}

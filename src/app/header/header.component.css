@@ -1,0 +1,40 @@
+header,
+header * {
+    box-sizing: border-box;
+}
+
+
+header {
+    background: #ffffff;
+    height: 66px;
+}
+
+.logo {
+    width: 76px;
+    height: 38px;
+    position: absolute;
+    left: 21px;
+    top: 18px;
+}
+
+.main-title {
+    color: #141414;
+    text-align: left;
+    font: 400 24px Inter;
+    position: absolute;
+    left: 131px;
+}
+
+.topnav {
+    float: right;
+}
+
+.topnav a {
+    float: left;
+    margin: 24px;
+    color: #000000;
+    text-align: left;
+    font: 400 16px Inter;
+    position: relative;
+    text-decoration: none;
+}
